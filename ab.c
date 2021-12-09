@@ -39,7 +39,7 @@ void gera_cadeia(int n, pid_t pid, char c)
       else {
         /*codigo para o último processo da cadeia */
 
-        printf("Processo %c%d tem PID=%5d e PPID=%5d\n", c, i, (int) getpid(), (int) getppid());
+        printf("Processo %c%d tem PID = %5d e PPID = %5d\n", c, i, (int) getpid(), (int) getppid());
       }
     }
   }

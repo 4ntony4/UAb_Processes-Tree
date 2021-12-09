@@ -1,2 +1,2 @@
 language = "c"
-run = "./out/ab 4"
+run = "./out/ab 7"
