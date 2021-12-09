@@ -26,7 +26,7 @@ void gera_cadeia(int n, pid_t pid, char c)
       if(i<n){
         /* código para cada processo da cadeia, exceto o último */
 
-        printf("Processo %c%d tem PID=%5d e PPID=%5d\n", c, i, (int) getpid(), (int) getppid());
+        printf("Processo %c%d tem PID = %5d e PPID = %5d\n", c, i, (int) getpid(), (int) getppid());
         pid = fork();
         if(pid==-1){
           perror("Erro na funcao fork()");
@@ -53,8 +53,8 @@ void arvore_ab(int n)
   int status;
 
   /* print inicial do processo AB */
-  printf("Cadeia de processos em V invertido com n=%d:\n", n);
-  printf("Processo AB tem PID=%5d\n",(int) getpid());
+  printf("Cadeia de processos em V invertido com n = %d:\n", n);
+  printf("Processo AB tem PID = %5d\n",(int) getpid());
 
   /* se n=0, não são criados novos processos e o programa termina */
   if(n==0){
